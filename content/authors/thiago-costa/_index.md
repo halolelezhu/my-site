@@ -1,7 +1,7 @@
 ---
 title: 叻叻猪
 bio: 这是叻叻猪的个人简介
-avatar: "/images/thiago-costa.jpg"
+avatar: "/images/img_7887.PNG"
 featured: false
 social:
 - title: github
