@@ -8,7 +8,7 @@ social:
   url: https://unsplash.com
 - title: github
   url: https://github.com
-- title: github
+- title: twitter
   url: https://github.com
 - title: github
   url: https://github.com
