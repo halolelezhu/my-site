@@ -10,7 +10,7 @@ social:
   url: https://github.com
 - title: twitter
   url: https://github.com
-- title: github
+- title: facebook
   url: https://github.com
 - title: github
   url: https://github.com
