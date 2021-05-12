@@ -1,7 +1,7 @@
 ---
 title: HIHI
 date: 2020-04-27
-hero: "/images/hero-3.jpg"
+hero: "/images/snipaste_2021-05-12_08-20-23.png"
 excerpt: "\U0001F3A8"
 timeToRead: 8
 authors:
