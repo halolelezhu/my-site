@@ -1,9 +1,9 @@
 ---
-title: How Figma changed the way we design at Narative
-date: 2017-04-30
+title: 关于我的小猪🐖
+date: 2021-04-30
 hero: /images/hero-5.jpg
-excerpt: To understand why Figma is the best design tool for our company, you have to understand what we do. As a designer.
-timeToRead: 8
+excerpt: 告诉你小猪不为人知的故事
+timeToRead: 12
 authors:
   - Thiago Costa
 
