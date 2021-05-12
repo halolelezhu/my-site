@@ -1,18 +1,17 @@
 ---
-title: Mack Mansouri
-bio: |
-  Written by You. This is where your author bio lives. Share your work, your
-  joys and of course, your Twitter handle.
-avatar: /images/mack-mansouri.jpg
+title: 叻叻猪2
+bio: 这是叻叻猪的个性宣言
+avatar: "/images/mack-mansouri.jpg"
 social:
-  - title: github
-    url: https://github.com
-  - title: github
-    url: https://github.com
-  - title: github
-    url: https://github.com
-  - title: github
-    url: https://github.com
-  - title: github
-    url: https://github.com
+- title: github
+  url: https://github.com
+- title: github
+  url: https://github.com
+- title: github
+  url: https://github.com
+- title: github
+  url: https://github.com
+- title: github
+  url: https://github.com
+
 ---
