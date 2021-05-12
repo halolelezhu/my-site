@@ -1,6 +1,6 @@
-baseURL: "https://example.com"
-languageCode: "en-us"
-title: "lelezhu"
+baseURL: "https://halolelezhu.xyz/"
+languageCode: "zh-cn"
+title: "Lelezhu's Gallery"
 pygmentsstyle: 'monokai'
 metaDataFormat: yaml
 
