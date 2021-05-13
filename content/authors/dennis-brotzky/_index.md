@@ -8,7 +8,8 @@ social:
   url: "/"
 - title: zhihu
   url: zhihu.com
-- {}
+- title: "/"
+  url: "/"
 - title: weibo
   url: weibo.com
 
