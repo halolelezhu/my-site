@@ -93,7 +93,9 @@ hugo server  #预览项目
 
 一般文章的格式都是markdown，可以看看主题的文档里有没有参考的格式，创建一个markdown文件，把格式粘贴进去，把标题、内容以及你想改的地方修改一下，保存到项目文件中的content文件夹内，再次使用上面的预览方法，就可以看到文章成功出现在页面上啦( •̀ ω •́ )y
 
-![](/images/wenzhang.gif)
+![](/images/q5j6w-emiae.gif)
+
+![](/images/mmz0i-pz2uj-1.gif)
 
 ### 7、通过git部署
 
@@ -116,6 +118,8 @@ git push -f origin master
 只要访问 github用户名.github.io ，就可以在线访问网站啦！
 
 ![](/images/git.gif)
+
+![](/images/777.gif)
 
 **以上就是HUGO框架通用的方法。**
 
