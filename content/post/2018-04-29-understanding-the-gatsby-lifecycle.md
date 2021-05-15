@@ -1,133 +1,71 @@
 ---
-title: Understanding the Gatsby lifecycle and how it impacts yout developer experience
-date: 2018-04-29
+title: 关于这个网站的诞生
+date: 2020-03-20
 hero: "/images/hero-2.jpg"
 excerpt: With the growing community interest in Gatsby, we hope to create more resources
   that make it easier for anyone to grasp the power of this incredible tool.
 timeToRead: 4
 authors:
-- Dennis Brotzky
-draft: true
+- lele zhu
+
 
 ---
-Hello, world! This is a demo post for `hugo-theme-novela`. Novela is built by the team at [Narative](https://narative.co), and built for everyone that loves the web.
+前段时间看了Clfolios的作品集，就挺羡慕里面的设计师能有一个自己的个人网站展示作品哼哼╰(艹皿艹 )，别人有的我也得有！！！那就开搞吧~但是我的Javascript就真还没来得及学透彻，只靠html、CSS其实也能弄，但因为就真的太想赶紧拥有，善用搜索发现可以抄近路，感觉还蛮简单的！！于是花了三个晚上的时间，完成了方法研究、框架选择、git部署、上域名等一系列环节，成功将这个网站上线。
+写篇文档记录一下，搭建的整个过程嘻嘻嘻~
 
-At Narative, we’ve been fans of Gatsby from day one, using it to build performant and flexible products for both clients and ourselves. With the growing community interest in Gatsby, we hope to create more resources that make it easier for anyone to grasp the power of this incredible tool.
-At Narative, we’ve been fans of Gatsby from day one, using it to build performant and flexible products for both clients and ourselves. With the growing community interest in Gatsby, we hope to create more resources that make it easier for anyone to grasp the power of this incredible tool.
 
-```js
-import React from "react";
-import { graphql, useStaticQuery } from "gatsby";
-import styled from "@emotion/styled";
 
-import * as SocialIcons from "../../icons/social";
-import mediaqueries from "@styles/media";
 
-const icons = {
-  dribbble: SocialIcons.DribbbleIcon,
-  linkedin: SocialIcons.LinkedinIcon,
-  twitter: SocialIcons.TwitterIcon,
-  facebook: SocialIcons.FacebookIcon,
-  instagram: SocialIcons.InstagramIcon,
-  github: SocialIcons.GithubIcon,
-};
 
-const socialQuery = graphql`
-  {
-    allSite {
-      edges {
-        node {
-          siteMetadata {
-            social {
-              name
-              url
-            }
-          }
-        }
-      }
-    }
-  }
-`;
+## 搭建方式
+HUGO框架+Github+Netifly
 
-function SocialLinks({ fill = "#73737D" }: { fill: string }) {
-  const result = useStaticQuery(socialQuery);
-  const socialOptions = result.allSite.edges[0].node.siteMetadata.social;
+## 什么是HUGO？
 
-  return (
-    <>
-      {socialOptions.map(option => {
-        const Icon = icons[option.name];
+根据官方文档的说法：Hugo是由Go语言实现的静态网站生成器。简单、易用、高效、易扩展、快速部署。
+你可以选择站点上的喜欢的主题模板，然后根据自己的实际需要将部分的内容进行定制化修改，比如LOGO、导航栏、文本等。
+那么他跟平时的建站工具有什么区别，整体下来我认为有这几个优点：速度快、成本低、灵活性强、参与感高。
 
-        return (
-          <SocialIconContainer
-            key={option.name}
-            target="_blank"
-            rel="noopener"
-            data-a11y="false"
-            aria-label={`Link to ${option.name}`}
-            href={option.url}
-          >
-            <Icon fill={fill} />
-          </SocialIconContainer>
-        );
-      })}
-    </>
-  );
-}
-```
+- 速度快：如果只是搭建起来能本地预览，只要几行命令，十分钟以内足够了。 
+- 成本低：很多开源的主题，都是免费的，但部分的文档写得不是很好。
+- 灵活性强：如果你有一点前端代码基础，基本上认真读文档，想改什么改什么！
+- 参与感高：相较于一站式的建站工具，自己完成代码修改、部署上线就跟玩游戏通关一样更快乐~
 
-This is another paragraph after the code block.
 
-## This is a secondary heading
-
-```jsx
-import React from "react";
-import { ThemeProvider } from "theme-ui";
-import theme from "./theme";
-
-export default props => (
-  <ThemeProvider theme={theme}>{props.children}</ThemeProvider>
-);
-```
-
-At Narative, we’ve been fans of Gatsby from day one, using it to build performant and flexible products for both clients and ourselves. With the growing community interest in Gatsby, we hope to create more resources that make it easier for anyone to grasp the power of this incredible tool.
-
-In this article I’ll explain how Gatsby’s lifecycle works and what the Gatsby specific files are for.
-
-One of the challenges I had when learning Gatsby was trying to understand the Gatsby lifecycle. React introduced me to the concept of a Component Lifecycle, but when I started learning Gatsby I felt at a loss again. I remember looking through example repositories and seeing Gatsby specific files in every project and thinking to myself, “What are these files for? Why are gatsby-node.js, gatsby-browser.js, and gatsby-ssr.js generated in the default starter kit? Can I really delete these files?”
-
-In this article I’ll explain the how Gatsby’s lifecycle works and what the Gatsby specific files are for.
-
-## How does Gatsby work?
-
-To understand what these files are for, we must first understand how Gatsby works. Gatsby is a static site generator that pulls data from sources you provide and generates a website/app for you.
-
-Gatsby requires Node to be installed to run the Bootstrap and Build sequences. Under the hood, Gatsby uses Webpack to build and start a development server amongst other things.
-
-### Step 1
+### Step 1 Install Hugo
 
 During the Bootstrap sequence, which occurs every time you run \$ gatsby develop, there are about 20 events that fire ranging from validating your gatsby-config.js to building the data schemas and pages for your site. For example, the Bootstrap sequence is where Gatsby will create pages. If you want an in depth look of all 20 Bootstrap steps Swyx shared a fantastic Gist that goes into more detail.
 
-### Step 2
+### Step 2 挑选喜欢的主题模板
 
 The Build sequence is very similar to the Bootstrap sequence, except it’s run with production optimizations and will output static files ready for deployment. Think of it as building your React application in production mode vs development.
 
-### Step 3
+### Step 3 新建一个hugo项目
+打开cmd转到hugo文件夹内，执行
+```js
+hugo new site [项目名]
+```
 
-And finally, once the generated files are deployed, Gatsby lives in the browser. Gatsby cleverly generates a static website that turns into a web app after initial load, which extends the lifecycle to the browser.
+PS.如果主题文档给出config文件格式是yaml，则需要加上 -f yml，否则默认生成的配置文件是toml类型。
 
-What’s important to remember is that Gatsby’s lifecycle can be aggregated into 3 main sequences:
+这时候hugo文件夹内会出现一个新的文件夹
 
-- Bootstrap
-- Build
-- Browser
-- These three sequences makeup the Gatsby lifecycle.
+### Step 3 把主题下载到本地
+```js
+cd[项目名] 进入到项目文件夹内
+git clone https://github.com/...
+```
 
-Parts of the lifecycle are visible when running $ gatsby develop
-A peak into the Gatsby lifecycle when running $ gatsby develop
-A peak into the Gatsby lifecycle when running \$ gatsby develop
-If you’re familiar with React and the component lifecycle, Gatsby’s lifecycle is almost the same concept. Just like React’s lifecycle, Gatsby exposes hooks for developers to build on top of. Those lifecycle hooks are accessed through Gatsby specific files such as gatsby-node.js, gatsby-browser.js and gatsby-ssr.js.
+下载你喜欢的主题，这个地址一般在对应主题的文档里或者github上都能获取到。 
 
+### Step 4 修改config文件
+接下来，需要修改一下config文件，将主题文档提供的复制下来覆盖掉本地项目文件夹内的内容，并保存。
+
+到这里，这个网站已经可以在本地进行预览了！
+```js
+Hugo
+hugo server 
+```
 What are the Gatsby specific files for?
 gatsby-config.js
 A place to put all your site configurations such as plugins, metadata, and polyfills. This file is the blueprint of your application and is where Gatsby really shines with its plugin system. When you run $ gatsby develop or $ gatsby build gatsby-config.js is the first file to be read and validated.
