@@ -40,5 +40,3 @@ fields:
   type: tag_list
   default: []
   label: Authors
-pages:
-- content/post/产品实战-系统权限角色设计.md
