@@ -1,5 +1,5 @@
 ---
-title: "【团队管理】项目管理经验复盘"
+title: 项目管理经验复盘
 date: 2021-03-20
 hero: "/images/_20210516171708.png"
 excerpt: 
