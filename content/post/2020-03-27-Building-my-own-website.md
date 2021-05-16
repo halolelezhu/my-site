@@ -125,7 +125,7 @@ git push -f origin master
 
 我这次选择的主题是：
 
-[https://themes.gohugo.io/hugo-theme-novela/](https://themes.gohugo.io/hugo-theme-novela/ "novela主题")
+[https://github.com/forestryio/hugo-theme-novela](https://github.com/forestryio/hugo-theme-novela "novela主题")
 
 这个文档提供了一种更快速的部署方式，能够一键部署到github上，后续我直接使用了netlify在线部署工具，通过github授权登录，直接将网站部署上去就ok了，注意的是需要设置好相关的参数，一般参数都会写在文档里面，跟着设置就行了。
 
