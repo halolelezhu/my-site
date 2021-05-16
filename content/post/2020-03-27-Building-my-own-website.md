@@ -1,6 +1,6 @@
 ---
 title: 关于这个网站的诞生
-date: 2020-03-27
+date: 2021-05-15T17:23:00+08:00
 hero: "/images/fengm333.jpg"
 excerpt: 使用HUGO搭建属于自己的网站！
 timeToRead: 15
