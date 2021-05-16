@@ -2,7 +2,7 @@
 timeToRead: 0
 authors:
 - lele zhu
-title: "【产品改版】隐写取证工具（PC）"
+title: "【产品实战】隐写取证工具（PC）"
 excerpt: ''
 date: 2018-10-31T00:00:00+08:00
 hero: "/images/yinyi4.png"
