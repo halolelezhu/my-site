@@ -14,7 +14,7 @@ authors:
 
 ## 搭建方式
 
-HUGO框架+Github+Netifly+aliyun
+HUGO+Github+Netifly+aliyun
 
 ## 什么是HUGO？
 
